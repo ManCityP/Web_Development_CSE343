@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Todo App</h1>
+        
+        <!-- Input Form -->
+        <div class="todo-input-group">
+            <input type="text" id="todo-input" placeholder="What needs doing?" autofocus>
+            <button id="add-btn">Add</button>
+        </div>
+
+        <!-- Controls / Filters bar -->
+        <div class="controls-bar">
+            <span class="tip">Tip: double-click a todo to edit. Press Enter to save.</span>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+        </div>
+
+        <!-- Todo List -->
+        <ul id="todo-list">
+            <!-- Dynamic items will be injected here -->
+        </ul>
+
+        <!-- Footer / Summary bar -->
+        <div class="todo-footer">
+            <span id="items-left">0 items left</span>
+            <div class="footer-actions">
+                <button id="clear-completed">Clear completed</button>
+                <button id="clear-all">Clear all</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link the compiled JavaScript file -->
+    <script src="client.js" type="module"></script>
+</body>
+</html>

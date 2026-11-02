@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="calculator-header">iOS Calculator</div>
+        
+        <!-- Calculator Screen -->
+        <div id="display" class="calculator-screen">0</div>
+
+        <!-- Calculator Keypad Grid -->
+        <div class="calculator-keys">
+            <button class="key action" data-action="clear" data-key="Escape">AC</button>
+            <button class="key action" data-action="double-zero" data-key="00">00</button>
+            <button class="key action" data-action="percent" data-key="%">%</button>
+            <button class="key operator" data-action="divide" data-key="/">&divide;</button>
+
+            <button class="key number" data-value="7" data-key="7">7</button>
+            <button class="key number" data-value="8" data-key="8">8</button>
+            <button class="key number" data-value="9" data-key="9">9</button>
+            <button class="key operator" data-action="multiply" data-key="*">&times;</button>
+
+            <button class="key number" data-value="4" data-key="4">4</button>
+            <button class="key number" data-value="5" data-key="5">5</button>
+            <button class="key number" data-value="6" data-key="6">6</button>
+            <button class="key operator" data-action="subtract" data-key="-">-</button>
+
+            <button class="key number" data-value="1" data-key="1">1</button>
+            <button class="key number" data-value="2" data-key="2">2</button>
+            <button class="key number" data-value="3" data-key="3">3</button>
+            <button class="key operator" data-action="add" data-key="+">+</button>
+
+            <button class="key number zero" data-value="0" data-key="0">0</button>
+            <button class="key number" data-value="." data-key=".">.</button>
+            <button class="key operator" data-action="calculate" data-key="Enter">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
